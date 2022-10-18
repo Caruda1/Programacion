@@ -2,16 +2,13 @@ package estructurasdecontrol2;
 
 public class Ejercicio6 {
 	public static void main (String[]args) {
-		float letraMinuscula = F;
-		boolean letra = true;
+		char letra0 = 'F';
 		
-		if (letra = true) {
-		else if (letraMinuscula > a && letraMinuscula < z) {
-			System.out.println("Es minuscula");
+		if (letra0 >= 'A' && letra0 <= 'Z' ) {
+			System.out.println("Es mayuscula");
+		}else if (letra0 >= 'a' && letra0 <= 'z') {
+			System.out.println("es minuscula");
 		}
-		
 		}
 		
 	}
-
-}

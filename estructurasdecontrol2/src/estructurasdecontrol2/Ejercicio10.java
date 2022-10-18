@@ -6,12 +6,10 @@ public class Ejercicio10 {
 		float fisica = 4f;
 		float quimica = 7f;
 		
-		if (mates>=6.5 && fisica>=6 && quimica>=5) {
+		if ((mates>=6.5 && fisica>=6 && quimica>=5) || (mates+ fisica + quimica)/3 >=7) {
 			System.out.println("Puede estudiar A");
-		}else if (mates<=6.5 && fisica<=6 && quimica<=5) {
-			System.out.println("No puede estudiar");
 		}else {
-			System.out.println("Puede estudiar por media 7");
+			System.out.println("No puede estudiar");
 		}
 	}
 
