@@ -51,6 +51,17 @@ public class Practica1 {
 		                    break;
 		                else System.out.println(x + " es un número primo");
 		}
+		            System.out.println("========");
+					System.out.println("Ejercicio7");
+					System.out.println("========");
+					int num = 5;
+					for (int x1 = 0; x1 < num; x1++) {
+					for (int o = 0; o < num; o++) {
+						System.out.print(num);
+					}
+					System.out.println();
+					}
+					
 }
 		}
 	}
