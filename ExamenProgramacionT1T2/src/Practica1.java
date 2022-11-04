@@ -42,13 +42,16 @@ public class Practica1 {
 			System.out.println("========");
 			System.out.println("Ejercicio5");
 			System.out.println("========");
-			  int max = 10;
-
-
-		        for(int x = 2; x <= max; x++){
-		            for(int i1 = 2; i1 < x; i1++){
-		                if(x % i1 == 0)
-		                    break;
+			int max = 10;
+			int contador = 0;
+			boolean esPrimo = true;
+		    for(int i = 2; i <= max; i++)
+		                if(i == 1|| i == 0 || i ==4)
+		                	continue;
+		        esPrimo = true
+		        		for (int x = 2; x <= i / 2; ++x) {
+		        	if (i % x == 0) {
+		        		esPrimo
 		                else System.out.println(x + " es un número primo");
 		}
 		            System.out.println("========");
