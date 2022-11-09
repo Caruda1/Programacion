@@ -1,6 +1,8 @@
+import java.util.Scanner;
 
 public class Menu {
 	public void imprimirMenu () {
+		int menuElegido;
 		do {
 		System.out.println("***************Menu**************");
 		System.out.println("1. Imprimir los numeros naturales");
@@ -21,22 +23,50 @@ public class Menu {
 
 		case 1:{
 			Numeros numero = new Numeros();
-			numero.imprimeNumerosNaturales();
+			numero.imprimirNumerosNaturales();
 			break;
 		}
 		case 2:{
-			TriangulodeNumero num = new TriangulodeNumeros();
+			TriangulodeNumeros num = new TriangulodeNumeros();
 			num.imprimetriangulo();
 			break;
 		}
 		case 3:{
 			TriangulodeNumeros num = new TriangulodeNumeros();
-			num.imprimetrianguloinvertido();
+			num.imprimeTrianguloInvertido();
 			break;
 		
 		}	
 		case 4:{
+			OperacionesDeSuma numero=new OperacionesDeSuma();
+			numero.operacionesSuma();
+			break;
+		}
+		case 5:{
+			TablaMultiplicar numero=new TablaMultiplicar();
+			numero.tablaMultiplicar();
+			break;
+		}
+		case 6:{
+			Numeros numero=new Numeros();
+			numero.imprimirNumerosPares();
+			break;
+		}
+		case 7:{
+			Numeros numero = new Numeros();
+			numero.imprimirNumerosPares();
+			break;
+		}
+		case 8:{
+			PiedraPapelTijera cosa=new PiedraPapelTijera();
+			cosa.jugarPiedraPapel();
+			break;
+		}
+		default:{
+			System.out.println("El numero no esta entre 1 y 9");
 			
 		}
+		}
+		} while (menuElegido !=9);
 }
 }
