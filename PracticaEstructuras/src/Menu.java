@@ -54,12 +54,17 @@ public class Menu {
 		}
 		case 7:{
 			Numeros numero = new Numeros();
-			numero.imprimirNumerosPares();
+			numero.imprimirNumerosPrimos();
 			break;
 		}
 		case 8:{
 			PiedraPapelTijera cosa=new PiedraPapelTijera();
 			cosa.jugarPiedraPapel();
+			break;
+		}
+		case 9:{
+			Salir cosa=new Salir();
+			cosa.salir();
 			break;
 		}
 		default:{

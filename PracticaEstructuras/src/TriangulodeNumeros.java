@@ -11,7 +11,7 @@ public class TriangulodeNumeros {
 		sc.nextLine();
 		for ( int i=1; i<=numero; i++) {
 			for (int j=1; j<=i; j++) {
-				System.out.print(j);
+				System.out.print(j+ " ");
 			}
 			System.out.println();
 		}
@@ -25,7 +25,7 @@ public class TriangulodeNumeros {
 		sc1.nextLine();
 		for (int i=1; i<=numero; i++) {
 			for (int j=numero; j>=i; j--) {
-				System.out.print(j);
+				System.out.print(j+ " ");
 			}
 			System.out.println();
 		}
