@@ -18,21 +18,19 @@ public class Propietario {
 		return dni;
 	}
 	public void setDni(String dni) {
-		System.out.println("Introduzca el dni: " +this.dni);
+		this.dni=dni;
 	}
 	public String getNombre() {
 		return nombre;
 	}
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
-		System.out.println("Introduzca el nombre: " +this.nombre);
 	}
 	public String getApellido() {
 		return apellido;
 	}
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
-		System.out.println("Introduzca el apellido: " +this.apellido);
 }
 	
 		

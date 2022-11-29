@@ -7,9 +7,8 @@ public class Vehiculo {
 	private String combustible;
 	private String deficienciasLeves;
 	private String deficienciasGraves;
-	boolean revisionPasada;
-	boolean revisionSuperada;
-	public Object imprimirVehiculo;
+	private boolean revisionPasada;
+	private boolean revisionSuperada;
 
 	public Vehiculo (String matricula, String modelo, String caballos, String combustible) {
 		this.matricula = matricula;
@@ -18,32 +17,53 @@ public class Vehiculo {
 		this.combustible = combustible;
 		System.out.println("Cliente con matricula "+matricula+" , modelo: "+modelo+" , caballos: "+caballos+" y combustible: "+combustible);	
 	}
-	public Vehiculo() {
-		// TODO Auto-generated constructor stub
-	}
 	public String getMatricula() {
 		return matricula;
 	}
 	public void setMatricula(String matricula) {
-		System.out.println("Introduzca la matricula: "+this.matricula);
+		this.matricula=matricula;
 	}
 	public String getModelo() {
 		return modelo;
 	}
 	public void setModelo(String modelo) {
-		System.out.println("Introduzca el modelo: "+this.modelo);
+		this.modelo=modelo;
 	}
 	public String getCaballos() {
 		return caballos;
 	}
 	public void setCaballos(String caballos) {
-		System.out.println("Introduzca los caballos: "+this.caballos);
+		this.caballos=caballos;
 	}
 	public String getCombustible() {
 		return combustible;		
 	}
 	public void setCombustible(String combustible) {
-		System.out.println("Introduzca su combustible: "+this.combustible);
+		this.combustible=combustible;
+	}
+	public String getDeficienciasLeves() {
+		return deficienciasLeves;
+	}
+	public void setDeficienciasLeves(String deficienciasLeves) {
+		this.deficienciasLeves=deficienciasLeves;
+	}
+	public String getDeficienciasGraves() {
+		return deficienciasGraves;
+	}
+	public void setDeficienciasGraves(String deficienciasGraves) {
+		this.deficienciasGraves=deficienciasGraves;
+	}
+	public boolean getrevisionPasada() {
+		return revisionPasada;
+	}
+	public void setrevisionPasada(boolean revisionPasada) {
+		this.revisionPasada=revisionPasada;
+	}
+	public boolean getrevisionSuperada() {
+		return revisionSuperada;
+	}
+	public void setrevisionSuperada(boolean revisionSuperada) {
+		this.revisionSuperada=revisionSuperada;
 	}
 	public void calculaPrecioITV() {
 		double valor;

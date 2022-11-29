@@ -9,7 +9,7 @@ public class MenuCreacionVehiculo {
 	private String combustible;
 	Scanner sc = new Scanner(System.in);
 	
-	public void mostrarMenuCreacionVehiculo(){
+	public Vehiculo mostrarMenuCreacionVehiculo(){
 		do {
 			System.out.println("Por favor, introduzca la matricula del vehiculo");
 			String matricula = sc.nextLine();
@@ -38,5 +38,7 @@ public class MenuCreacionVehiculo {
 				System.out.println("ERROR: Debe introducir Diesel / Gasolina");
 			}
 		}while (combustible.equalsIgnoreCase("Diesel && Gasolina"));
+		Vehiculo v = new Vehiculo (matricula, caballos, modelo, combustible);
+		return v;
 	}
 	}
