@@ -24,14 +24,23 @@ public class EmisionInforme {
 	System.out.println("*****************************************************");
 	System.out.println("*******************DAtos de la ITV*******************");
 	System.out.println("*****************************************************");
-	System.out.println("ITV NO SUPERADA" +v.getrevisionSuperada());
 	
-	}
-	private void imprimeDeficienciasGraves(Vehiculo vehiculo) {
-		
-	}
-	private void imprimeDeficienciasLeves(Vehiculo vehiculo) {
-		
+	
+	EmisionInforme emision=new EmisionInforme();
+	
+	if (!v.getrevisionPasada()) {
+		System.out.println("Todavia no ha pasado la ITV");
+	}else if (v.getrevisionPasada()&& v.getrevisionSuperada());
+		emision.imprimeDeficienciasLeves(v);
+	} else if (v.getrevisionPasada()&& !v.getrevisionSuperada());
+		emision.imprimeDeficienciasGraves(v);
 	}
 }
+	private void imprimeDeficienciasGraves(Vehiculo v) {
+		
+	}
+	private void imprimeDeficienciasLeves(Vehiculo v) {
+		
+	
+
 

@@ -1,6 +1,9 @@
 package practicaAplicacionITV;
 
+import java.util.Scanner;
+
 public class Vehiculo {
+	Scanner sc = new Scanner(System.in);
 	private String matricula;
 	private String modelo;
 	private String caballos;
