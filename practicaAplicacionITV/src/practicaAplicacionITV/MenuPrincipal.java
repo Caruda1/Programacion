@@ -3,8 +3,14 @@ package practicaAplicacionITV;
 import java.util.Scanner;
 
 public class MenuPrincipal {
+	
+	int menuElegido;
+	Vehiculo vehiculo;
+	Propietario propietario;
+
 	public void mostrarMenu() {
-		int menuElegido;
+		
+		
 		do {
 		System.out.println("**************APLICACIONITV**************");
 		System.out.println("Introduzca la opcion elegida:");
@@ -17,18 +23,44 @@ public class MenuPrincipal {
 		
 		Scanner sc = new Scanner(System.in);
 		menuElegido = sc.nextInt();
+		
 		switch (menuElegido) {
+		
 		case 1:{
-			Vehiculo vehiculo = new Vehiculo();
-			vehiculo.imprimirVehiculo;
+			MenuCreacionVehiculo imprimirVehiculo = new MenuCreacionVehiculo();
+			vehiculo = imprimirVehiculo.mostrarMenuCreacionVehiculo();
 			break;
 		}
+		
 		case 2:{
-			Propietario propietario = new Propietario();
-			propietario.imprimirPropietario;
+			MenuCreacionPropietario imprimirPropietario = new MenuCreacionPropietario();
+			propietario = imprimirPropietario.mostrarMenuCreacionPropietario();
 			break;
 		}
+		case 3:{
+			if (hayVehiculo(vehiculo)) {
+				System.out.println("ERROR: tiene que tener un vehiculo creado para calcular ITV");
+			}else {
+				System.out.println("El precio de la ITV es: " +vehiculo.calculaPrecioITV());
+			}
+			}
+			break;
+		case 4:{
+			MenuPasarITV pasarITV=new MenuPasarITV();
+			pasarITV.mostrarMenuPasarITV(vehiculo);
+			break;
 		}
-		} while (menuElegido =!6);
-	} 
+		case 5:{
+			EmisionInforme emision=new EmisionInforme();
+			emision.emiteInforme(vehiculo, propietario);
+			break;
+		}
+			
+		}
+		} while (menuElegido != 6);
+	}
+
+	private boolean hayVehiculo(Vehiculo vehiculo2) {
+		return false;
+	}
 }

@@ -68,7 +68,7 @@ public class Vehiculo {
 	public void setrevisionSuperada(boolean revisionSuperada) {
 		this.revisionSuperada=revisionSuperada;
 	}
-	public void calculaPrecioITV() {
+	public double calculaPrecioITV() {
 		double valor;
 		int caballosInt=Integer.parseInt(caballos);
 		if (combustible.equalsIgnoreCase("Gasolina")) {
@@ -93,5 +93,6 @@ public class Vehiculo {
 			
 			}
 		}
+		return valor;
 	}
 	}
