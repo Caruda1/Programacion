@@ -38,15 +38,16 @@ public class EmisionInforme {
 	System.out.println("");
 	System.out.println("");
 	}
-	private void imprimeDeficienciasGraves(Vehiculo v) {
+	private void imprimeDeficienciasLeves(Vehiculo v) {
 		if (v.getDeficienciasLeves()==null) {
+			System.out.println("No hay deficiencias leves.");
 			System.out.println("ITV superada");
 	}else {
 		System.out.println("Deficiencias leves: " +v.getDeficienciasLeves());
 		System.out.println("ITV superada");
 	}
 	}
-	private void imprimeDeficienciasLeves(Vehiculo v) {
+	private void imprimeDeficienciasGraves(Vehiculo v) {
 		if (v.getDeficienciasLeves()==null) {
 			System.out.println("ITV NO superada");
 			System.out.println("Deficiencias graves: " +v.getDeficienciasGraves());

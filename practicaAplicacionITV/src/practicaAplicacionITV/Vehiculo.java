@@ -13,12 +13,12 @@ public class Vehiculo {
 	private boolean revisionPasada;
 	private boolean revisionSuperada;
 
-	public Vehiculo (String matricula, String modelo, String caballos, String combustible) {
+	public Vehiculo (String matricula,String caballos, String modelo, String combustible) {
 		this.matricula = matricula;
 		this.modelo = modelo;
 		this.caballos = caballos;
 		this.combustible = combustible;
-		System.out.println("Cliente con matricula "+matricula+" , modelo: "+modelo+" , caballos: "+caballos+" y combustible: "+combustible);	
+		System.out.println("Vehiculo creado correctamente ");	
 	}
 	public String getMatricula() {
 		return matricula;
@@ -26,17 +26,17 @@ public class Vehiculo {
 	public void setMatricula(String matricula) {
 		this.matricula=matricula;
 	}
-	public String getModelo() {
-		return modelo;
-	}
-	public void setModelo(String modelo) {
-		this.modelo=modelo;
-	}
 	public String getCaballos() {
 		return caballos;
 	}
 	public void setCaballos(String caballos) {
 		this.caballos=caballos;
+	}
+		public String getModelo() {
+			return modelo;
+		}
+		public void setModelo(String modelo) {
+			this.modelo=modelo;
 	}
 	public String getCombustible() {
 		return combustible;		

@@ -7,9 +7,17 @@ public class MenuPrincipal {
 	int menuElegido;
 	Vehiculo vehiculo;
 	Propietario propietario;
+	private boolean hayVehiculoCreado(Vehiculo vehiculo) {
+		if (vehiculo != null) {
+			
+		return true;
+	}else {
+		return false;
+	}
+	}
 
 	public void mostrarMenu() {
-		
+		int menuElegido;
 		
 		do {
 		System.out.println("**************APLICACIONITV**************");
@@ -38,13 +46,15 @@ public class MenuPrincipal {
 			break;
 		}
 		case 3:{
-			if (hayVehiculo(vehiculo)) {
+			if (hayVehiculoCreado(vehiculo)==false) {
 				System.out.println("ERROR: tiene que tener un vehiculo creado para calcular ITV");
 			}else {
 				System.out.println("El precio de la ITV es: " +vehiculo.calculaPrecioITV());
+				break;
 			}
+		
 			}
-			break;
+			
 		case 4:{
 			MenuPasarITV pasarITV=new MenuPasarITV();
 			pasarITV.mostrarMenuPasarITV(vehiculo);

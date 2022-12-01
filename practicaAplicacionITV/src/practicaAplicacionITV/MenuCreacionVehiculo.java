@@ -18,13 +18,6 @@ public class MenuCreacionVehiculo {
 			}
 		}while (matricula.equals(""));
 		
-		do {
-			System.out.println("Por favor, introduzca la modelo del vehiculo");
-			modelo = sc.nextLine();
-			if (modelo.equals("")) {
-				System.out.println("ERROR: El modelo no puede estar vacio");
-			}
-		}while (modelo.equals(""));
 		
 		do {
 			System.out.println("Por favor, introduzca los caballos del vehiculo");
@@ -34,6 +27,14 @@ public class MenuCreacionVehiculo {
 				
 			}
 		}while (caballos.equals(""));
+		
+		do {
+			System.out.println("Por favor, introduzca la modelo del vehiculo");
+			modelo = sc.nextLine();
+			if (modelo.equals("")) {
+				System.out.println("ERROR: El modelo no puede estar vacio");
+			}
+		}while (modelo.equals(""));
 		
 		do {
 			System.out.println("Por favor, introduzca el combustible del vehiculo");

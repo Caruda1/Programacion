@@ -12,7 +12,7 @@ public class Propietario {
 		this.dni = dni;
 		this.nombre = nombre;
 		this.apellido = apellido;
-		System.out.println("Cliente con dni " +dni+ " , nombre: " +nombre+ " y apellido: " +apellido+ " CREADO. ");
+		System.out.println("Cliente creado correctamente");
 	}
 	public String getDni() {
 		return dni;
