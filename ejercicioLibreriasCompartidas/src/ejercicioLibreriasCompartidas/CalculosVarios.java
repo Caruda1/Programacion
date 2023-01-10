@@ -1,11 +1,6 @@
 package ejercicioLibreriasCompartidas;
 
 public class CalculosVarios {
-		double yardas;
-		double farenheit;
-		double libras;
-		double pintas;
-		double piesCuadrados;
 		
 		public double calculoYardasMetros (double yardas) {
 			return (yardas * 0.9144);
